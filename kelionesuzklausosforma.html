@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <p></p>
+        <ul>
+          <a style="float: right" href="/login.html">Login</a>
+        </ul>
+        <a href="/">
+          <img
+            src="/nuotraukos/logo-social.png"
+            alt="logo"
+            width="120px"
+            height="60px"
+        /></a>
+        <hr />
+      </div>
+    </header>
+    <form action="/index.html">
+      <h2 align="center">Keliones uzklausos forma</h2>
+      <div>
+        <label for="name">Vardas:</label>
+        <br />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          pattern="[A-Z][a-z]*"
+          required
+        />
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <br />
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div>
+        <label for="phone">Telefono numeris: </label>
+        <br />
+        <input type="tel" name="phone" id="phone" pattern="[0-9]*" required />
+      </div>
+      <br />
+      <fieldset aria-required="true">
+        <div>
+          <label for="country">select country: </label>
+          <select name="country" id="country">
+            <option for="country">Lithuania</option>
+            <option for="country">Italy</option>
+            <option for="country">Grece</option>
+            <option for="country">Germany</option>
+          </select>
+          <div>
+            <label for="city">Select City: </label>
+            <select>
+              <option for="city">Kaunas</option>
+              <option for="city">Vilnius</option>
+              <option for="city">siauliai</option>
+              <option for="city">Telsiai</option>
+            </select>
+          </div>
+          <div>
+            <label for="hotel">Select hotel: </label>
+            <select>
+              <option for="city">one star hotel</option>
+              <option for="city">two star hotel</option>
+              <option for="city">4 star hotel</option>
+              <option for="city">5 star hotel</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <br />
+      <div>
+        <label for="date">Pasirinkite data: </label>
+        <input required type="date" name="date" id="date" />
+      </div>
+      <br />
+      <div>
+        <label for="additional">Papildomi :</label>
+        <label for="car">Car</label>
+        <input type="checkbox" name="car" id="car" />
+        <label for="bike">Bike</label>
+        <input type="checkbox" name="bike" id="bike" />
+        <label for="scoter">Scoter</label>
+        <input type="checkbox" name="scoter" id="scoter" />
+        <label for="boat">Boat</label>
+        <input type="checkbox" name="boat" id="boat" />
+      </div>
+      <br />
+      <div>
+        <label for="additional">Pasirinkite :</label>
+        <label for="car">Car</label>
+        <input type="radio" name="additional" id="additional" />
+        <label for="bike">Bike</label>
+        <input type="radio" name="additional" id="additional" />
+        <label for="scoter">Scoter</label>
+        <input type="radio" name="additional" id="additional" />
+        <label for="boat">Boat</label>
+        <input type="radio" name="additional" id="additional" />
+      </div>
+      <div>
+        <label for="Adress">Papildomai: </label>
+
+        <textarea
+          id="Adress"
+          name="Adress"
+          rows="10"
+          cols="21"
+          placeholder="Papidoma informacija"
+        ></textarea>
+      </div>
+      <button type="submit">Patvirtinti</button>
+    </form>
+
+    <hr />
+
+    <footer align="center">
+      <p>Mus galite rasti cia:</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2294.34121048219!2d23.915995877067928!3d54.8969331575857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e72276dd555557%3A0x2bf3519be19be30c!2sKauno%20Informacini%C5%B3%20technologij%C5%B3%20mokykla!5e0!3m2!1slt!2slt!4v1695299780068!5m2!1slt!2slt"
+        width="350"
+        height="250"
+        style="border: 2"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <p>
+        Author: Vardenis Pavardenis<br />
+        <a href="mailto:vardenis.pavardenis@example.com"
+          >vardenis.pavardenis@example.com</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
